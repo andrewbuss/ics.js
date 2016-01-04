@@ -40,15 +40,15 @@ var ics = function() {
          * @param  {string} description Description of event
          * @param  {string} location    Location of event
          * @param  {string} begin       Beginning date of event
-         * @param  {string} stop        Ending date of event
+         * @param  {string} end        Ending date of event
          */
-        'addEvent': function(subject, description, location, begin, stop) {
+        'addEvent': function(subject, description, location, begin, end) {
             // I'm not in the mood to make these optional... So they are all required
             if (typeof subject === 'undefined' ||
                 typeof description === 'undefined' ||
                 typeof location === 'undefined' ||
                 typeof begin === 'undefined' ||
-                typeof stop === 'undefined'
+                typeof end === 'undefined'
             ) {
                 return false;
             };
